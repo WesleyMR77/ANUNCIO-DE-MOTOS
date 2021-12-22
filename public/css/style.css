@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 98.5vw;
+    height: 80px;
+    background-color: rgba(100, 146, 62, 0.8);
+    margin: 0;
+    padding: 0;
+}
+
+
+header h1{
+    margin: 0;
+    padding: 0;
+    font-size: 1.6em;
+    padding-top: 25px;
+    padding-left: 25px;
+    color: white;
+}
+
+.form-div{
+ 
+}
+
+.cadastro{    
+    justify-content: center;
+    display: flex;
+    background-color: white;
+
+    height: 380px;
+}
+
+form{
+ color: rgba(100, 146, 62, 0.8);
+ font-weight: bold;
+    margin-top: 35px;
+}
+
+.lbl-inp{
+    margin-top: 20px;
+}
+
+input{
+    width: 355px;
+    height: 17.5px;
+}
+
+.input-img{
+height: 30px;
+}
+
+.input-spaco1{
+    margin-left: 43px;
+}
+.input-spaco2{
+    margin-left: 44px;
+}
+.input-spaco3{
+    margin-left: 24px;
+}
+.input-spaco4{
+    margin-left: 15px;
+}
+
+.button-cadastrar{
+    margin-top: 35px;
+}
+
+button{
+    width: 120px;
+    height: 35px;
+    background-color: rgba(100, 146, 62, 0.8);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+}
+
+img{
+    width: 226.333px;
+    height: 276.333px;
+    margin-top: 20px;
+}
+
+
+.item{
+    width: 265.333px;
+    height: 450.333px;
+    display: inline-block;
+    margin:20px;
+    text-align: center;
+    /* background-color:  rgba(216, 189, 189,0.3); */
+    border-radius: 10px;
+    background-color: rgba(100, 146, 62, 0.4);
+    color: white;
+
+}
+
+h5{
+   font-size: 1em;
+}
+
+ul{
+    margin-left: 0;
+    padding-left: 0;
+}
+li{
+    list-style: none;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.motos{
+    margin-left: 50px;
+}
+
+
+

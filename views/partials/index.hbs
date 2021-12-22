@@ -1,0 +1,63 @@
+
+
+
+    <section >
+        <div >
+            <div class="cadastro">
+                    <form action="/uploadmultiple" enctype="multipart/form-data" method="POST">
+            
+                            <div  class="form-div">
+                                <div class="lbl-inp">
+                                    <label>Escolha uma imagem:</label>
+                                    <input class="input-img" type="file" name="images" id="formFile" multiple> 
+                                </div>
+                                <div class="lbl-inp">
+                                    <label>Nome:</label>
+                                    <input class="input-spaco1" type="text" name="nome" id="nome"> 
+                                </div>
+                                <div class="lbl-inp">
+                                    <label>Preço:</label>
+                                    <input class="input-spaco2" type="text" name="preco" id="preco"> 
+                                </div>
+                                <div class="lbl-inp">
+                                    <label>Telefone:</label>
+                                    <input class="input-spaco3" type="text" name="telefone" id="telefone"> 
+                                </div>
+                                <div class="lbl-inp">
+                                    <label>Descricao:</label>
+                                    <input class="input-spaco4" type="text" name="descricao" id="descricao"> 
+                                </div>                                
+                            </div>
+
+                            <div class="button-cadastrar">
+                                <button type="submit" class="btn btn-warning">Cadastrar</button>
+                            </div>
+                       
+                    </form>
+            </div>
+
+                <section class="motos" >
+
+                            {{#each images}} 
+                                {{#each this}}
+                                    {{#if imageBase64 }}                         
+                                                    <div class="item" >
+                                                        <img src='data:{{contentType}};base64,{{imageBase64}}'  alt="...">
+                                                        <div class="card-body">
+                                                            <h4>{{ nome}}</h4>
+                                                            <ul>
+                                                            <li>Valor: R$ {{preco}}</li>
+                                                            <li>Contato: {{telefone}}</li>
+                                                            <li>Descricao: {{descricao}}</li> 
+                                                            </ul>                                                      
+
+                                                        </div>
+                                                    </div>                                  
+                                    {{/if}}
+                                 {{/each}}
+                            {{/each}}
+        
+                </section>
+
+        </div>
+    </section>
